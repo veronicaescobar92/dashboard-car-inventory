@@ -151,6 +151,13 @@ Ejecutar la suite automatizada:
 ./.venv/Scripts/python.exe -m pytest -q
 ```
 
+También se puede ejecutar la suite en un contenedor Docker, sin depender del entorno virtual local:
+
+```powershell
+docker build -t repuestos-app .
+docker run --rm repuestos-app python -m pytest -q
+```
+
 Con la API en ejecución, también están disponibles las verificaciones de integración y carga:
 
 ```powershell
@@ -164,6 +171,26 @@ El recorrido visual automatizado requiere Playwright para Node.js:
 npm install
 npx playwright install chromium
 npm run check:browser
+```
+
+## Ejecución con Docker
+
+La imagen genera los datos sintéticos y entrena el modelo durante su construcción. Para iniciar la API y la interfaz web:
+
+```powershell
+docker compose up --build
+```
+
+Servicios disponibles:
+
+- Aplicación web: http://127.0.0.1:8501
+- API REST: http://127.0.0.1:8000
+- Documentación OpenAPI: http://127.0.0.1:8000/docs
+
+Para detener y eliminar los contenedores:
+
+```powershell
+docker compose down
 ```
 
 Los validadores guardan resultados regenerables en `output/evidence/`, una ruta local excluida del repositorio. Puede cambiarse con `REPUESTOS_EVIDENCE_DIR`. El recorrido de navegador también admite `REPUESTOS_UI`, `PLAYWRIGHT_MODULE` y `BROWSER_EXECUTABLE` para entornos personalizados.
