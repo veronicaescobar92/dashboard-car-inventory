@@ -65,6 +65,16 @@ Las versiones verificadas se encuentran fijadas en `requirements.lock.txt`.
 
 ## Puesta en marcha
 
+### 0. Instalar un intérprete de Python
+
+Antes de crear el entorno virtual, instalar Python 3.11 o superior y asegurarse de que el comando `python` esté disponible en la terminal.
+
+Comprobar la instalación con:
+
+```powershell
+python --version
+```
+
 ### 1. Crear el entorno e instalar dependencias
 
 Desde la raíz del proyecto, en PowerShell:
