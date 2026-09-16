@@ -1,0 +1,13 @@
+{
+  "name": "repuestos-browser-qa",
+  "private": true,
+  "scripts": {
+    "check:browser": "node scripts/browser_check.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

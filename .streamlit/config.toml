@@ -1,0 +1,13 @@
+[theme]
+primaryColor = "#087f8c"
+backgroundColor = "#f7f9fc"
+secondaryBackgroundColor = "#eaf0f5"
+textColor = "#16283c"
+font = "sans serif"
+
+[server]
+address = "127.0.0.1"
+headless = true
+
+[browser]
+gatherUsageStats = false
