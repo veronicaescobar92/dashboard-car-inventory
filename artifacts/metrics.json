@@ -14,7 +14,7 @@
     "dataset_version": "26b6a610c4b17cafee076ec9b4bea45f02c471ccbd61511ddc38a815c8d0c122",
     "model_version": "random-forest-v1",
     "sklearn_version": "1.9.0",
-    "trained_at": "2026-09-16T01:31:16.791376+00:00",
+    "trained_at": "2026-09-16T01:58:02.251461+00:00",
     "feature_schema": [
       "product_id",
       "category",
